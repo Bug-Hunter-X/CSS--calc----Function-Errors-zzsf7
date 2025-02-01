@@ -1,0 +1,8 @@
+The corrected CSS uses proper spacing around the operators within the `calc()` function to ensure that the calculation is correctly parsed by the browser.
+
+```css
+.element {
+  width: calc(100% - 10px);
+}
+```
+Adding spaces around the `-` operator makes the calculation unambiguous and ensures that the browser correctly evaluates `100%` minus `10px`.  Without the spaces, the browser may misinterpret the expression.
